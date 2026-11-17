@@ -1,0 +1,4 @@
+[server]
+# Streamlit upload-size cap in MB: 10 GB = 10 * 1024 MB.
+# Actual processing of very large files depends on available RAM and the in-memory app design.
+maxUploadSize = 10240

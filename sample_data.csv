@@ -1,0 +1,8 @@
+StudentID,Name,Age,Email,Score,JoinDate
+1, Rahul ,20,rahul@example.com,78,2025-01-10
+2,Aman,,aman@example.com,82,2025-02-15
+3,Neha,21,,91,2025-03-20
+4,Karan,19,karan.example.com,,not-a-date
+4,Karan,19,karan.example.com,,not-a-date
+5, Priya,twenty,priya@example.com,75,2025-05-18
+6,Arjun,22,arjun@example.com,88,2025-06-01

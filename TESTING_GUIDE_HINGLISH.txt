@@ -1,0 +1,33 @@
+TESTING GUIDE
+=============
+
+Automated helper tests:
+  python -m unittest discover -s tests -v
+Expected in this build: 5 tests pass.
+
+Manual end-to-end checks to complete on your Windows PC:
+[ ] Install requirements successfully.
+[ ] Start app and open local browser URL.
+[ ] Upload sample_data.csv and inspect the preview.
+[ ] Confirm missing values, duplicate row, whitespace, invalid email-like value, possible numeric mismatch and invalid date are shown where expected.
+[ ] Check detailed findings include row, column, original value, issue and suggested action.
+[ ] Preview a cleaning proposal.
+[ ] Click Reject and confirm current dataset remains unchanged.
+[ ] Preview again, approve, and check dashboard changes.
+[ ] Download cleaned CSV and open it.
+[ ] Download Excel workbook and check its sheets.
+[ ] Download JSON quality report and remaining-issues CSV.
+[ ] Try a malformed input and confirm a readable error is shown.
+[ ] Capture genuine screenshots of the running app for the report/PPT.
+
+Record actual observations; do not mark unchecked items as passed.
+
+
+NEW AUTOMATIC REVIEW TESTS
+1. CSV mein Age values 20, twenty, 35 hon: number words/numeric conversion proposal dekho. Mixed unsupported value ho to column silently coerce nahi hona chahiye.
+2. City values Delhi, delhi, DELHI hon: category standardization proposal dekho.
+3. Age -5 ya 250 ho: validation finding aani chahiye, value automatically change nahi honi chahiye.
+4. Numeric column mein clear extreme value ho: potential outlier finding aani chahiye.
+5. Similar text (e.g. Rahul Sharma/Rahul Shama): fuzzy suggestion aani chahiye, automatic merge nahi.
+6. Exact duplicate row: proposed output mein duplicate removal dikhe; Reject se original current data unchanged rahe.
+7. Approve & Apply ke baad dashboard aur report mein current results check karo.
