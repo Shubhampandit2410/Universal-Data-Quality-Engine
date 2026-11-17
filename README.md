@@ -106,6 +106,10 @@ This project demonstrates practical concepts related to:
 - Expanded automated data quality reports.
 - Improved testing coverage.
 
+## Application Preview
+
+![Universal Data Quality Engine Dashboard](dashboard.png)
+
 ## Author
 
 **Shubham Mishra**
