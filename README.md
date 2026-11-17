@@ -1,5 +1,8 @@
 # Universal Data Quality & Auto-Cleaning Engine
 
+![Python Project Tests](https://github.com/Shubhampandit2410/Universal-Data-Quality-Engine/actions/workflows/python-tests.yml/badge.svg?branch=main)
+
+
 A Python-based data quality application designed to identify data issues, evaluate cleaning opportunities, and support review-based data cleaning workflows.
 
 ## Project Overview
